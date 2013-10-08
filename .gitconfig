@@ -1,0 +1,15 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  rbc = rebase --continue
+  ap = add -p
+  rbi = rebase -i
+[user]
+	name = Aaron McLeod
+	email = aaron.mcleod@mosaic.com
+[core]
+	quotepath = false
+	editor = /usr/bin/vim
