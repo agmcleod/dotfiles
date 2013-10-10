@@ -23,6 +23,12 @@ set list
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Initialize indent guides
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 IndentGuidesEnable
+
+" Remove toolbar
+set guioptions-=T
+" Turn off wrapping
+set nowrap
