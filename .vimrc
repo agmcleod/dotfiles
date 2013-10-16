@@ -16,6 +16,7 @@ set syn=auto
 filetype on
 filetype plugin on
 filetype indent on
+autocmd BufNewFile,BufRead *.ljs set filetype=javascript
 " configures status bar at bottom
 set laststatus=2
 set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [%04l,%04v/%L]\ \ \ \ \ \ \ \ \ \ \ [%p%%]
