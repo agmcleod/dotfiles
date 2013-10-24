@@ -1,4 +1,4 @@
-colorscheme slate
+colorscheme github
 set encoding=utf8
 try
 	lang en_US
