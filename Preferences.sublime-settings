@@ -1,25 +1,23 @@
 {
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
-	"draw_white_space": "all",
-	"enable_tab_scrolling": false,
-	"fade_fold_buttons": false,
-	"font_face": "Menlo",
-	"font_size": 12.0,
-	"highlight_line": true,
-	"ignored_packages":
-	[
-		"SublimePaster",
-		"Vintage",
-		"threejs",
-		"TrailingSpaces"
-	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"phoenix_color_blue": true,
-	"phoenix_highlight_current_tab": true,
-	"tab_size": 2,
-	"theme": "Phoenix Light.sublime-theme",
-	"translate_tabs_to_spaces": true
+  "bold_folder_labels": true,
+  "caret_style": "phase",
+  "color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+  "draw_white_space": "all",
+  "enable_tab_scrolling": false,
+  "fade_fold_buttons": false,
+  "font_face": "Menlo",
+  "font_size": 12.0,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "TrailingSpaces",
+    "Better TypeScript",
+    "Vintage",
+    "threejs",
+    "SublimePaster"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true
 }
