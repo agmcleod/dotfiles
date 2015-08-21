@@ -2,8 +2,6 @@ PATH=$PATH:$HOME/bin
 PATH=/usr/local/bin:$PATH
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 alias vu='vagrant up'
 alias vs='vagrant status'
 alias vsp='vagrant suspend'
@@ -20,3 +18,4 @@ export ANDROID_HOME=/Users/aaronmcleod/Documents/adt/sdk
 export PATH=$PATH:/usr/local/go/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 source ~/git-completion.bash
 export GOPATH=$HOME/go
+REACT_EDITOR=atom
