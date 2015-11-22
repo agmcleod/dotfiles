@@ -9,7 +9,7 @@
   rbi = rebase -i
 [user]
 	name = Aaron McLeod
-	email = aaron.mcleod@mosaic.com
+	email = aaron.g.mcleod@gmail.com
 [core]
 	quotepath = false
 	editor = /usr/bin/vim
