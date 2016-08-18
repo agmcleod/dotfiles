@@ -1,19 +1,21 @@
 {
-	"atomic_save": false,
-	"bold_folder_labels": false,
+	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/cobalt2 (SL).tmTheme",
 	"draw_white_space": "all",
+	"el_capitan_sidebar_blue_folders": true,
 	"enable_tab_scrolling": false,
 	"fade_fold_buttons": false,
 	"font_face": "Menlo",
-	"font_size": 12,
+	"font_size": 12.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Better TypeScript",
+		"SublimeCodeIntel",
 		"SublimePaster",
-		"TernJS",
-		"TrailingSpaces",
+		"Theme - Afterglow",
+		"threejs",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
