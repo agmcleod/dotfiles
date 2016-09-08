@@ -9,15 +9,6 @@
 	"font_face": "Menlo",
 	"font_size": 12.0,
 	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Better TypeScript",
-		"SublimeCodeIntel",
-		"SublimePaster",
-		"Theme - Afterglow",
-		"threejs",
-		"Vintage"
-	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"tab_size": 2,
