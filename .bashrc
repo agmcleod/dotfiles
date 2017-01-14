@@ -13,9 +13,20 @@ export GOROOT=/usr/local/go
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
 export PATH=$PATH:$GOROOT/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export ANDROID_HOME=/Users/aaronmcleod/Documents/adt/sdk
-export PATH=$PATH:/usr/local/go/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
-source ~/git-completion.bash
+export ANDROID_HOME=/Users/aaronmcleod/Library/Android/sdk
 export GOPATH=$HOME/go
-REACT_EDITOR=atom
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
+source ~/git-completion.bash
+export RUST_SRC_PATH=/usr/local/src/rustc-1.4.0/src
+eval "$(rbenv init -)"
+export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
+
+alias dockexit='unset ${!DOCKER_*}'
+dockr () {
+      local override="docker-compose.$1.yml"
+      shift
+      docker-compose -f docker-compose.yml -f "$override" $*
+}
+
+# added by travis gem
+[ -f /Users/aaronmcleod/.travis/travis.sh ] && source /Users/aaronmcleod/.travis/travis.sh
