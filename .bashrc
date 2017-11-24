@@ -7,6 +7,7 @@ alias vs='vagrant status'
 alias vsp='vagrant suspend'
 alias vr='vagrant resume'
 alias vssh='vagrant ssh'
+alias 🐈='cat'
 export VIM_APP_DIR=~/Applications
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
@@ -27,6 +28,6 @@ dockr () {
 # added by travis gem
 # [ -f /Users/aaronmcleod/.travis/travis.sh ] && source /Users/aaronmcleod/.travis/travis.sh
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-export RUST_SRC_PATH=/usr/local/src/rustc-1.17.0-src/src
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
