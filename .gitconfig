@@ -7,7 +7,6 @@
   rbc = rebase --continue
   ap = add -p
   rbi = rebase -i
-	up = pull --rebase --autostash
 [user]
 	name = Aaron McLeod
 	email = aaron.g.mcleod@gmail.com
