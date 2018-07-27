@@ -1,5 +1,5 @@
+PATH="/usr/local/bin:$(getconf PATH)"
 PATH=$PATH:$HOME/bin
-PATH=/usr/local/bin:$PATH
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 alias vu='vagrant up'
@@ -8,6 +8,7 @@ alias vsp='vagrant suspend'
 alias vr='vagrant resume'
 alias vssh='vagrant ssh'
 alias gitup='git fetch --prune && git pull'
+alias gitclean='git branch | grep -v "master" | xargs git branch -d'
 export VIM_APP_DIR=~/Applications
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
