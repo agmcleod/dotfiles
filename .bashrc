@@ -1,4 +1,3 @@
-PATH="/usr/local/bin:$(getconf PATH)"
 PATH=$PATH:$HOME/bin
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
@@ -13,17 +12,22 @@ export VIM_APP_DIR=~/Applications
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
 
-export ANDROID_HOME=/Users/aaronmcleod/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/aaronmcleod/Library/Android/sdk
 # export GOPATH=$HOME/go
-export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
+PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator:$HOME/src/wabt/bin
 source ~/git-completion.bash
 eval "$(rbenv init -)"
 
 alias dockexit='unset ${!DOCKER_*}'
 dockr () {
       local override="docker-compose.$1.yml"
-      shift
-      docker-compose -f docker-compose.yml -f "$override" $*
+      if [ ! -f "$override" ]; then
+          local override="docker-compose.yml"
+      else
+          shift
+      fi
+      docker-compose -f "$override" $*
 }
 
 # added by travis gem
@@ -31,6 +35,8 @@ dockr () {
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+
+which node
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

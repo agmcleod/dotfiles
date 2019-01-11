@@ -1,0 +1,33 @@
+{
+    "npm.enableScriptExplorer": true,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "Hack-Regular",
+    "git.confirmSync": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Oceanic Next",
+    "[rust]": {
+        "editor.tabSize": 4
+    },
+    "[solidity]": {
+        "editor.tabSize": 4
+    },
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vs-seti",
+    "window.nativeTabs": false,
+    "editor.minimap.enabled": false,
+    "typescript.autoImportSuggestions.enabled": false,
+    "reason.diagnostics.tools": [
+        "bsb"
+    ],
+    "css.validate": false,
+    "solidity.compileUsingRemoteVersion": "0.4.21",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    "jest.enableSnapshotUpdateMessages": false,
+    "prettier.jsxSingleQuote": true,
+    "terminal.integrated.shellArgs.osx": []
+}
