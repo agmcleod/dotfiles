@@ -12,12 +12,11 @@ export VIM_APP_DIR=~/Applications
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
 
-export ANDROID_SDK_ROOT=/Users/aaronmcleod/Library/Android/sdk
+export ANDROID_HOME=/Users/aaronmcleod/Library/Android/sdk
 # export GOPATH=$HOME/go
-PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator:$HOME/src/wabt/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
+export PATH=$PATH:$ANDROID_HOME/emulator:$HOME/src/wabt/bin
 source ~/git-completion.bash
-eval "$(rbenv init -)"
 
 alias dockexit='unset ${!DOCKER_*}'
 dockr () {
