@@ -9,13 +9,19 @@ alias vssh='vagrant ssh'
 alias gitup='git fetch --prune && git pull'
 alias gitclean='git branch | grep -v "master" | xargs git branch -d'
 export VIM_APP_DIR=~/Applications
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=/usr/local/Cellar/vim/7.4.027/bin:$PATH
 
 export ANDROID_HOME=/Users/aaronmcleod/Library/Android/sdk
-# export GOPATH=$HOME/go
-PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:/Users/aaronmcleod/.cargo/bin:$GOPATH
-export PATH=$PATH:$ANDROID_HOME/emulator:$HOME/src/wabt/bin
+PATH=$ANDROID_HOME/platform-tools:$PATH
+PATH=$ANDROID_HOME/tools:$PATH
+PATH=$ANDROID_HOME/tools/bin:$PATH
+PATH=$ANDROID_HOME/emulator:$PATH
+PATH=$PATH:$HOME/flutter/bin:$HOME/bin
+
+PATH=$PATH:/Users/aaronmcleod/.cargo/bin
+
+export PATH=$PATH:$HOME/src/wabt/bin
 source ~/git-completion.bash
 
 alias dockexit='unset ${!DOCKER_*}'
@@ -37,9 +43,9 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 which node
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export ETH_HOME="/Users/aaronmcleod/Library/Ethereum"
 export PS1="\u@\h\w$ "

@@ -7,7 +7,7 @@
   "workbench.colorTheme": "Oceanic Next",
   "[rust]": {
     "editor.tabSize": 4,
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "rust-lang.rust"
   },
   "[python]": {
     "editor.tabSize": 4
@@ -22,27 +22,39 @@
   "javascript.suggest.autoImports": false,
   "css.validate": false,
   "solidity.compileUsingRemoteVersion": "0.4.21",
-  "java.errors.incompleteClasspath.severity": "ignore",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "jest.enableSnapshotUpdateMessages": false,
   "terminal.integrated.shellArgs.osx": [],
   "editor.fontFamily": "Hack",
-  "rust-client.channel": "stable",
-  "rust.full_docs": false,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "lldb.launch.terminal": "integrated",
   "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false
   },
   "[markdown]": {
     "editor.formatOnSave": false
-  }
+  },
+  "typescript.suggest.autoImports": false,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "rust-analyzer.rustfmt.overrideCommand": null,
+  "rust-analyzer.inlayHints.enable": false,
+  "angular.experimental-ivy": true
 }
