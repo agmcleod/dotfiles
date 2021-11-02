@@ -32,7 +32,7 @@ dockr () {
       else
           shift
       fi
-      docker-compose -f "$override" $*
+      docker compose -f "$override" $*
 }
 
 # added by travis gem
