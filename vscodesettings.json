@@ -1,45 +1,38 @@
 {
-    "npm.enableScriptExplorer": true,
-    "editor.renderWhitespace": "all",
-    "git.confirmSync": false,
-    "files.trimTrailingWhitespace": true,
-    "editor.tabSize": 2,
-    "workbench.colorTheme": "Oceanic Next",
-    "[rust]": {
-      "editor.tabSize": 4,
-      "editor.defaultFormatter": "matklad.rust-analyzer"
-    },
-    "[python]": {
-      "editor.tabSize": 4
-    },
-    "[solidity]": {
-      "editor.tabSize": 4
-    },
-    "window.zoomLevel": 0,
-    "workbench.iconTheme": "vs-seti",
-    "window.nativeTabs": false,
-    "editor.minimap.enabled": false,
-    "javascript.suggest.autoImports": false,
-    "css.validate": false,
-    "solidity.compileUsingRemoteVersion": "0.4.21",
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "terminal.integrated.shellArgs.osx": [],
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "lldb.launch.terminal": "integrated",
-    "editor.formatOnSave": true,
-    "[markdown]": {
-      "editor.formatOnSave": false
-    },
-    "typescript.suggest.autoImports": false,
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact"
-    ],
-    "rust-analyzer.rustfmt.overrideCommand": null,
-    "angular.experimental-ivy": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.semi": false
-  }
+  "editor.renderWhitespace": "all",
+  "git.confirmSync": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Oceanic Next",
+  "[rust]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vs-seti",
+  "window.nativeTabs": false,
+  "editor.minimap.enabled": false,
+  "javascript.suggest.autoImports": false,
+  "css.validate": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "lldb.launch.terminal": "integrated",
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "typescript.suggest.autoImports": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "rust-analyzer.rustfmt.overrideCommand": null,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false
+}
