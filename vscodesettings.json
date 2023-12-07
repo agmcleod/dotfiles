@@ -3,15 +3,16 @@
   "git.confirmSync": false,
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Oceanic Next",
+  "workbench.colorTheme": "Aura Dark (Soft Text)",
   "[rust]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "matklad.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[python]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": null,
+    "editor.formatOnType": true
   },
-  "window.zoomLevel": 0,
   "workbench.iconTheme": "vs-seti",
   "window.nativeTabs": false,
   "editor.minimap.enabled": false,
@@ -34,5 +35,22 @@
   "rust-analyzer.rustfmt.overrideCommand": null,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
-  "prettier.semi": false
+  "prettier.semi": false,
+  "editor.inlayHints.fontSize": 10,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "ruby.rubocop.suppressRubocopWarnings": true,
+  "rust-analyzer.check.command": "clippy",
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "[terraform]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "hashicorp.terraform"
+  }
 }
