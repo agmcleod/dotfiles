@@ -1,20 +1,19 @@
+# zmodload zsh/zprof
 PATH=$PATH:$HOME/bin
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-export VIM_APP_DIR=~/Applications
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 PATH=/usr/local/opt/openjdk/bin:$PATH
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-PATH=$ANDROID_HOME/platform-tools:$PATH
-PATH=$ANDROID_HOME/tools:$PATH
-PATH=$ANDROID_HOME/tools/bin:$PATH
-PATH=$ANDROID_HOME/emulator:$PATH
-PATH=$PATH:$HOME/flutter/bin:$HOME/bin
-
 PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/src/wabt/bin
 
-# source ~/git-completion.bash
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk/21.0.2
+export ES_JAVA_HOME=$JAVA_HOME
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:/Users/aaron.mcleod/Library/Python/3.8/bin
 
 alias dockexit='unset ${!DOCKER_*}'
 dockr () {
@@ -27,12 +26,13 @@ dockr () {
       docker compose -f "$override" $*
 }
 
-# added by travis gem
-# [ -f /Users/aaronmcleod/.travis/travis.sh ] && source /Users/aaronmcleod/.travis/travis.sh
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 source "$HOME/.cargo/env"
 
-PROMPT="%B%F{49}%n $ %f%b"
+# zprof
+autoload -Uz compinit && compinit
+
+alias ibrew="arch -x86_64 /usr/local/homebrew/bin/brew"

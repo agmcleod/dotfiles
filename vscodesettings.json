@@ -42,15 +42,13 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
-  "ruby.rubocop.suppressRubocopWarnings": true,
   "rust-analyzer.check.command": "clippy",
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.intellisense": "rubyLocate",
-  "ruby.useLanguageServer": true,
   "[terraform]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "hashicorp.terraform"
-  }
+  },
+  "nxConsole.showNodeVersionOnStartup": false,
+  "rubyLsp.formatter": "rubocop"
 }
