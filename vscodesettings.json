@@ -1,26 +1,24 @@
 {
-  "editor.renderWhitespace": "all",
+  "npm.enableScriptExplorer": true,
   "git.confirmSync": false,
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Aura Dark (Soft Text)",
   "[rust]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": null,
-    "editor.formatOnType": true
+    "editor.tabSize": 4
+  },
+  "[solidity]": {
+    "editor.tabSize": 4
   },
   "workbench.iconTheme": "vs-seti",
-  "window.nativeTabs": false,
   "editor.minimap.enabled": false,
   "javascript.suggest.autoImports": false,
   "css.validate": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "lldb.launch.terminal": "integrated",
   "editor.formatOnSave": true,
   "[markdown]": {
     "editor.formatOnSave": false
@@ -32,23 +30,32 @@
     "typescript",
     "typescriptreact"
   ],
-  "rust-analyzer.rustfmt.overrideCommand": null,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "prettier.semi": false,
-  "editor.inlayHints.fontSize": 10,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "html.erb": "html"
+  },
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
   "svelte.enable-ts-plugin": true,
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Aura Soft Dark (Soft Text)",
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  "[lua]": {
+    "editor.defaultFormatter": "yinfei.luahelper"
   },
-  "rust-analyzer.check.command": "clippy",
-  "[terraform]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "hashicorp.terraform"
-  },
-  "nxConsole.showNodeVersionOnStartup": false,
-  "rubyLsp.formatter": "rubocop"
+  "diffEditor.ignoreTrimWhitespace": false
 }
