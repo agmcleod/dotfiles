@@ -7,6 +7,7 @@
   rbc = rebase --continue
   ap = add -p
   rbi = rebase -i
+  prunebranches = !git branch -vv | grep \"origin/.*: gone]\" | awk \"{print \\$1}\" | xargs git branch -d
 [user]
 	name = Aaron McLeod
 	email = aaron.g.mcleod@gmail.com
